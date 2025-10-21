@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo лист</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мій ToDo лист</h1>
+
+        <div class="input-section">
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Введіть нове завдання..."
+                   autocomplete="off">
+            <button id="addBtn">Додати</button>
+        </div>
+
+        <ul class="tasks-list" id="tasksList"></ul>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number" id="totalTasks">0</span>
+                <span>Всього</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="activeTasks">0</span>
+                <span>Активних</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="completedTasks">0</span>
+                <span>Виконано</span>
+            </div>
+        </div>
+
+        <button class="clear-all-btn" onclick="clearAllTasks()">Очистити всі завдання</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
